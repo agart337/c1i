@@ -14,8 +14,8 @@ body {
     font-display: swap;
 }
 
-img {
-    margin-top: 100px;
+.image {
+    margin-top: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
