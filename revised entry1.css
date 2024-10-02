@@ -6,8 +6,8 @@ body {
 }
 
 @font-face {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    src: url();
+    font-family: "Inter";
+    src: url(Inter_font/Inter_28pt-Regular.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
