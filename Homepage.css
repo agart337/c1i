@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter_font/Inter_18pt-Regular.ttf'),
+        url('Inter_font/Inter_18pt-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .nav html {
     font-size: 100%;
     box-sizing: border-box;
@@ -22,21 +31,15 @@ body {
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter_font/Inter_18pt-Regular.ttf'),
-        url('Inter_font/Inter_18pt-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 .image {
-    margin-top: 300px;
+    margin-top: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
+    position: relative;
+    z-index: 90;
 }
 
 .div {
@@ -46,8 +49,11 @@ body {
 h1 {
     line-height: 15px;
     font-size: 200px;
+    position: relative;
+    top: -120px;
     color: black;
     font-family: 'Inter', sans-serif;
+    z-index: 100;
 }
 
 h2 {
@@ -57,4 +63,40 @@ h2 {
     color: black;
     font-family: 'Inter', sans-serif;
     font-style: italic;
+}
+
+.button-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.button-item {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Inter', sans-serif;
+}
+
+.button-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.button-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.poster-image {
+    width: 400px;
+    height: auto;
+    position: absolute;
+}
+
+#spirited {
+    top: 200px;
+    left: 200px;
 }
