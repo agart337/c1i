@@ -4,6 +4,8 @@ html {
 
 body {
     background-image: url('background.png');
+    background-attachment: fixed;
+    position: absolute;
     max-height: 100vh;
     min-width: 100%;
     background-size: cover;
