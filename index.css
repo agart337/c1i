@@ -1,0 +1,70 @@
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.topnav a {
+    float: inline-start;
+    color: #ff4000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1500px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.wrapper>div {
+    border: 2px solid rgb(233 171 88);
+    border-radius: 5px;
+    background-color: rgb(233 171 88 / 50%);
+    padding: 1em;
+    color: #d9480f;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3/5;
+}
+
+.nine {
+    grid-column: 3;
+    grid-row: 5/7;
+}
+
+.ten {}
