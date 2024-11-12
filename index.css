@@ -127,6 +127,7 @@ h2 {
 .seven {
     grid-column: 1/3;
     grid-row: 6/9;
+    overflow: hidden;
 }
 
 .eight {
