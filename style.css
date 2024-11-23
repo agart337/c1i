@@ -4,21 +4,20 @@ body {
 }
 
 div {
-    text-align: center
+    text-align: center;
 }
 
 h1 {
-    line-height: 15px;
     font-size: 120px;
     color: rgb(3, 1, 70);
     font-family: Arial;
 }
 
 h2 {
-    line-height: 15px;
     font-size: 60px;
     display: block;
     color: rgb(3, 1, 70);
+    margin-top: -40px;
     font-family: Arial;
     font-style: italic;
 }
@@ -27,25 +26,21 @@ h2 {
     max-width: 1500px;
     max-height: 500px;
     margin: 0 auto;
-}
-
-.wrapper>div {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    background-color: rgba(255, 240, 221, 0.5);
-    padding: 1em;
-    color: #847c79;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-}
-
-.wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    /* text-align: center; */
 }
+
+.wrapper>div {
+    background-color: rgba(255, 240, 221, 0.5);
+    padding: 1em;
+    color: #847c79;
+    height: 300px;
+    width: 300px;
+}
+
 
 
 .wrapperlink {
@@ -61,7 +56,7 @@ h2 {
 
 .topnav a {
     float: inline-start;
-    color: #ff4000;
+    color: rgb(3, 1, 70);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -148,4 +143,97 @@ img:hover {
     opacity: 0.5;
     border: 2px black;
     border-radius: 15px;
+}
+
+.text {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+/* --------> */
+
+@media (width <=1250px) {
+    h1 {
+        font-size: 80px;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+    }
+
+    h2 {
+        font-size: 40px;
+        display: block;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+        font-style: italic;
+    }
+}
+
+@media (max-width:1250px) {
+
+    .wrapper {
+        grid-template-columns: 100% 0px 0px;
+    }
+
+    .wrapper .grid-item {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: center;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight,
+    .nine,
+    .ten,
+    .eleven {
+        grid-column: 1;
+    }
+
+    .two {
+        grid-row: 2;
+    }
+
+    .three {
+        grid-row: 3;
+    }
+
+    .four {
+        grid-row: 4;
+    }
+
+    .five {
+        grid-row: 5;
+    }
+
+    .six {
+        grid-row: 6;
+    }
+
+    .seven {
+        grid-row: 7;
+    }
+
+    .eight {
+        grid-row: 8;
+    }
+
+    .nine {
+        grid-row: 9;
+    }
+
+    .ten {
+        grid-row: 10;
+    }
+
+    .eleven {
+        grid-row: 11;
+    }
 }
