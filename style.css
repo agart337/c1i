@@ -251,3 +251,96 @@ h2 {
         grid-row: 11;
     }
 }
+
+.text {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+/* --------> */
+
+@media (width <=1250px) {
+    h1 {
+        font-size: 80px;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+    }
+
+    h2 {
+        font-size: 40px;
+        display: block;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+        font-style: italic;
+    }
+}
+
+@media (max-width:1250px) {
+
+    .wrapper {
+        grid-template-columns: 100% 0px 0px;
+    }
+
+    .wrapper .grid-item {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: center;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight,
+    .nine,
+    .ten,
+    .eleven {
+        grid-column: 1;
+    }
+
+    .two {
+        grid-row: 2;
+    }
+
+    .three {
+        grid-row: 3;
+    }
+
+    .four {
+        grid-row: 4;
+    }
+
+    .five {
+        grid-row: 5;
+    }
+
+    .six {
+        grid-row: 6;
+    }
+
+    .seven {
+        grid-row: 7;
+    }
+
+    .eight {
+        grid-row: 8;
+    }
+
+    .nine {
+        grid-row: 9;
+    }
+
+    .ten {
+        grid-row: 10;
+    }
+
+    .eleven {
+        grid-row: 11;
+    }
+}
