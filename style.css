@@ -22,7 +22,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    /* text-align: center; */
+    text-align: center;
 }
 
 .wrapperlink {
@@ -53,12 +53,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: rgb(3, 1, 70);
+    padding-left: 25%;
 }
 
 .title {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(3, 1, 70);
+    text-align: center;
+}
+
+.year {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(203, 60, 141);
+    text-align: center;
 }
 
 div {
@@ -76,11 +85,15 @@ h1 {
 h2 {
     font-size: 5em;
     display: block;
-    color: rgb(3, 1, 70);
+    color: rgb(203, 60, 141);
     margin-top: -40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     padding-bottom: 3em;
+}
+
+.catchphrase {
+    padding-top: 7%;
 }
 
 .marquee {
@@ -96,9 +109,9 @@ h2 {
 }
 
 .m1 {
-    font-size: 5em;
+    font-size: 4em;
     color: rgb(3, 1, 70);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     direction: left;
 }
@@ -108,9 +121,9 @@ h2 {
 }
 
 .m2 {
-    font-size: 5em;
+    font-size: 4em;
     color: rgb(203, 60, 141);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     direction: right;
 }
@@ -123,6 +136,7 @@ h2 {
     padding-left: 20%;
     padding-right: 20%;
 }
+
 
 .one {
     grid-column: 1;
