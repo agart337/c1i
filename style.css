@@ -9,26 +9,20 @@ html {
 }
 
 body {
+    align-items: center;
     width: 100%;
     height: 100%;
+    background-color: rgb(255, 250, 230);
+    font-family: arial;
 }
 
 .wrapper {
-    max-width: 1400px;
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     /* text-align: center; */
-}
-
-.wrapper>div {
-    background-color: rgba(255, 240, 221, 0.5);
-    padding: 1em;
-    color: #847c79;
-    height: 300px;
-    width: 300px;
 }
 
 .wrapperlink {
@@ -38,20 +32,16 @@ body {
     border-style: 2px solid
 }
 
-.wrapper a:hover {
-    border-color: white;
-}
-
-.container {
-    width: 800px;
-    height: 450px;
-}
-
-video {
-    width: 500px;
-    height: 370px;
+.container video {
+    width: 400px;
+    height: 270px;
     display: block;
     cursor: pointer;
+    border-radius: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
 }
 
 .info {
@@ -71,31 +61,67 @@ video {
     font-weight: 800;
 }
 
-body {
-    background-color: rgb(219, 212, 180);
-    font-family: arial;
-}
-
 div {
     text-align: center;
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 10em;
     color: rgb(3, 1, 70);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 300px;
-    padding-bottom: 50px;
+    padding-top: 2em;
+    padding-bottom: 0.35em;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 5em;
     display: block;
     color: rgb(3, 1, 70);
     margin-top: -40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    padding-bottom: 200px;
+    padding-bottom: 3em;
+}
+
+.marquee {
+    display: block;
+    width: 200%;
+    position: absolute;
+    animation: marquee 5s linear infinite;
+}
+
+.m1 {
+    background-color: rgb(203, 60, 141);
+
+}
+
+.m1 {
+    font-size: 5em;
+    color: rgb(3, 1, 70);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    direction: left;
+}
+
+.m2 {
+    background-color: rgb(3, 1, 70);
+}
+
+.m2 {
+    font-size: 5em;
+    color: rgb(203, 60, 141);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    direction: right;
+}
+
+.p1 {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: rgb(3, 1, 70);
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .one {
@@ -104,64 +130,63 @@ h2 {
 }
 
 .two {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
 }
 
 .three {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .four {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .five {
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .six {
-    grid-column: 2;
-    grid-row: 4;
+    grid-column: 3;
+    grid-row: 2;
 }
 
 .seven {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
 }
 
 .eight {
-    grid-column: 3;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 3;
 }
 
 .nine {
-    grid-column: 2;
-    grid-row: 6;
+    grid-column: 3;
+    grid-row: 3;
 }
 
 /* --------> */
 
-@media (width <=1250px) {
-    h1 {
-        font-size: 80px;
-        color: rgb(3, 1, 70);
-        font-family: Arial;
-    }
+@media (max-width:800px) {
+        {
+        h1 {
+            font-size: 5em;
+            color: rgb(3, 1, 70);
+            font-family: Arial;
+        }
 
-    h2 {
-        font-size: 40px;
-        display: block;
-        color: rgb(3, 1, 70);
-        font-family: Arial;
-        font-style: italic;
+        h2 {
+            font-size: 2em;
+            display: block;
+            color: rgb(3, 1, 70);
+            font-family: Arial;
+            font-style: italic;
+        }
     }
-}
-
-@media (max-width:1250px) {
 
     .wrapper {
         grid-template-columns: 100% 0px 0px;
@@ -245,15 +270,12 @@ h2 {
         font-family: Arial;
         font-style: italic;
     }
-}
 
-@media (max-width:800px) {
-
-    .wrapper {
+    .wrapper div {
         grid-template-columns: 100% 0px 0px;
     }
 
-    .wrapper .grid-item {
+    .wrapper {
         grid-column: 1;
         grid-row: auto;
         text-align: center;
