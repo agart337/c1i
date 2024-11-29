@@ -10,8 +10,9 @@ html {
 
 body {
     align-items: center;
-    width: 100%;
-    height: 100%;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 250, 230);
     font-family: arial;
 }
@@ -56,11 +57,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 20%;
-    font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .title {
-    font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
     font-weight: 700;
     color: rgb(3, 1, 70);
@@ -68,7 +69,7 @@ body {
 }
 
 .year {
-    font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1em;
     font-weight: 500;
     color: rgb(203, 60, 141);
@@ -120,7 +121,7 @@ h2 {
 .m1 {
     font-size: 4em;
     color: rgb(3, 1, 70);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     direction: left;
 }
@@ -132,15 +133,15 @@ h2 {
 .m2 {
     font-size: 4em;
     color: rgb(203, 60, 141);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     direction: right;
 }
 
 .p1 {
     text-align: justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
     color: rgb(3, 1, 70);
     padding-left: 20%;
     padding-right: 20%;
@@ -205,30 +206,28 @@ h2 {
 /* --------> */
 
 @media (max-width:800px) {
-        {
-        h1 {
-            font-size: 5em;
-            color: rgb(3, 1, 70);
-            font-family: Arial;
-        }
+    h1 {
+        font-size: 5em;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+    }
 
-        h2 {
-            font-size: 2em;
-            display: block;
-            color: rgb(3, 1, 70);
-            font-family: Arial;
-            font-style: italic;
-        }
+    h2 {
+        font-size: 2em;
+        display: block;
+        color: rgb(3, 1, 70);
+        font-family: Arial;
+        font-style: italic;
     }
 
     .wrapper {
-        grid-template-columns: 100% 0px 0px;
+        grid-template-columns: 1fr;
         grid-column: 1;
         grid-row: auto;
         text-align: center;
     }
 
-    .one,
+    /* .one,
     .two,
     .three,
     .four,
@@ -276,7 +275,7 @@ h2 {
 
     .ten {
         grid-row: 10;
-    }
+    } */
 }
 
 .text {
@@ -304,9 +303,9 @@ h2 {
         font-style: italic;
     }
 
-    .wrapper div {
+    /* .wrapper div {
         grid-template-columns: 100% 0px 0px;
-    }
+    } */
 
     .wrapper {
         grid-column: 1;
