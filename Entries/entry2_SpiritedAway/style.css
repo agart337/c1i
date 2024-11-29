@@ -129,8 +129,8 @@ h2 {
     color: transparent;
     font-size: 4em;
     text-align: center;
-    -webkit-text-stroke-width: 2em;
-    -webkit-text-stroke-color: rgb(3, 1, 70);
+    -webkit-text-stroke-width: 0.03em;
+    -webkit-text-stroke-color: rgb(3, 1, 70)
 }
 
 h2:hover {
@@ -152,7 +152,7 @@ p {
 }
 
 .review {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 100;
     line-height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -170,6 +170,7 @@ p {
     font-style: italic;
     color: rgb(203, 60, 141);
     font-size: 3em;
+    line-height: 90%;
 }
 
 .spotify {

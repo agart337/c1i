@@ -152,7 +152,7 @@ p {
 }
 
 .review {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 100;
     line-height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -170,6 +170,7 @@ p {
     font-style: italic;
     color: rgb(203, 60, 141);
     font-size: 3em;
+    line-height: 90%;
 }
 
 .spotify {
