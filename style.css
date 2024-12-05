@@ -38,7 +38,7 @@ body {
     height: 270px;
     display: block;
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -53,6 +53,7 @@ body {
 }
 
 .text {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,29 +81,92 @@ div {
     text-align: center;
 }
 
+/* static background image on scroll - NOT WORKING */
+.heading {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.freepik.com/premium-vector/continuous-line-drawing-movie-clapper-board-film-flap-out-line-design_30004181.htm);
+    background-attachment: fixed;
+}
+
+.heading {
+    display: inline-block;
+}
+
 h1 {
     font-size: 10em;
     color: rgb(3, 1, 70);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    stroke-width: 5%;
-    stroke: rgb(203, 60, 141);
-    padding-top: 2em;
+    padding-top: 1.3em;
     padding-bottom: 0.35em;
+    text-align: center;
+    position: relative;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: rgb(255, 250, 230);
+    animation:
+        typewriter 3s ease forwards;
+}
+
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
 }
 
 h2 {
     font-size: 5em;
     display: block;
     color: rgb(203, 60, 141);
-    stroke: rgb(3, 1, 70);
-    stroke-width: 5%;
-    margin-top: -40px;
+    margin-top: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     padding-bottom: 3em;
+    text-align: center;
 }
 
-.catchphrase {
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h2::before {
+    background: rgb(255, 250, 230);
+    animation:
+        typewriter 3s ease forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+img {
+    width: 8%;
+    margin-bottom: 8em;
+}
+
+@keyframes .catchphrase {
     padding-top: 7%;
 }
 
@@ -119,10 +183,11 @@ h2 {
 }
 
 .m1 {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(3, 1, 70);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+    font-weight: lighter;
     direction: left;
 }
 
@@ -131,10 +196,11 @@ h2 {
 }
 
 .m2 {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(203, 60, 141);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+    font-weight: lighter;
     direction: right;
 }
 
@@ -205,29 +271,26 @@ h2 {
 
 /* --------> */
 
-@media (max-width:800px) {
-    h1 {
-        font-size: 5em;
-        color: rgb(3, 1, 70);
-        font-family: Arial;
-    }
-
-    h2 {
-        font-size: 2em;
-        display: block;
-        color: rgb(3, 1, 70);
-        font-family: Arial;
-        font-style: italic;
-    }
-
+@media (max-width: 1000px) {
     .wrapper {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-column: 1;
-        grid-row: auto;
+        /* Force single column */
+        grid-auto-rows: auto;
+        /* Allow rows to adjust height automatically */
+        align-items: center;
+    }
+
+    .text {
         text-align: center;
     }
 
-    /* .one,
+    .container video {
+        align-items: center;
+    }
+
+    /* Ensure all grid items span the full width */
+    .one,
     .two,
     .three,
     .four,
@@ -235,12 +298,11 @@ h2 {
     .six,
     .seven,
     .eight,
-    .nine,
-    .ten,
-    .eleven {
+    .nine {
         grid-column: 1;
     }
 
+    /* Optional: You might want to reset or adjust row placements */
     .two {
         grid-row: 2;
     }
@@ -272,11 +334,8 @@ h2 {
     .nine {
         grid-row: 9;
     }
-
-    .ten {
-        grid-row: 10;
-    } */
 }
+
 
 .text {
     background-color: transparent;
