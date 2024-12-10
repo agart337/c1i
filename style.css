@@ -93,6 +93,12 @@ div {
 
 .heading {
     display: inline-block;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.heading:hover {
+    transform: scale(1.1);
 }
 
 h1 {
@@ -103,6 +109,8 @@ h1 {
     padding-bottom: 0.35em;
     text-align: center;
     position: relative;
+    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-color: rgb(203, 60, 141);
 }
 
 h1::before,
@@ -132,11 +140,11 @@ h2 {
     font-size: 5em;
     display: block;
     color: rgb(203, 60, 141);
-    margin-top: 0px;
+    margin-top: -20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    padding-bottom: 2.5em;
     text-align: center;
+    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-color: rgb(3, 1, 70);
 }
 
 h2::before,
@@ -163,6 +171,7 @@ h2::before {
 
 img {
     width: 8%;
+    padding-top: 2.5em;
     margin-bottom: 8em;
 }
 
@@ -279,6 +288,7 @@ img {
         grid-auto-rows: auto;
         /* Allow rows to adjust height automatically */
         align-items: center;
+        margin-left: 25%;
     }
 
     .text {
